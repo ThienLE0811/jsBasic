@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+.header {
+    height: 50px;
+    background-color: #3b5998;
+}
+
+
+.content {
+    position: relative;
+    margin-left: 200px;
+    padding-top: 20px;
+}
+
+
+.triangle{
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.header-li {
+    position: absolute;
+    top: 49px;
+    left: -10px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(138, 134, 134);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.header-li::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    left: 7px;
+}
+
+.li-group {
+    border-bottom: 1px solid rgb(112, 112, 110);
+    height: calc(200px/4);
+    padding: 10px;
+    
+}
+
+.li-group:nth-child(4) {
+    border: none;
+}
+
+.li-group:hover {
+    background-color: #3b5998;
+}
+
+.tamgiactrang {
+    color: white;
+}
+
+.danhsachra {
+    opacity: 1;
+    visibility: visible;
+}

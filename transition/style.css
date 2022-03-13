@@ -1,0 +1,22 @@
+
+#btn1 {
+    padding: 15px;
+    background-color: rgb(24, 136, 136);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.goRight {
+    transform: translateX(400px);
+}
+

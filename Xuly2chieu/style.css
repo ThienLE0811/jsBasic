@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+#btn1 {
+    display: block;
+    padding: 15px;
+    background-color: rgb(24, 136, 136);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#btn2 {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(24, 136, 136);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.chieuso1 {
+    animation: chieu1 3s forwards!important ;
+
+}
+
+
+@keyframes chieu1 {
+    0% {transform: translateX(0px) translateY(0px);}
+    25% {transform: translateX(200px) translateY(0px);}
+    50% {transform: translateX(200px) translateY(200px);}
+    80% {transform: translateX(500px) translateY(200px);}
+    90% {transform: translateX(500px) translateY(500px);}
+    100% {transform: translateX(700px) translateY(500px);}
+}
+
+#btn2 {
+    animation: chieu2 3s forwards;
+}
+
+@keyframes chieu2 {
+    100% {transform: translateX(0px) translateY(0px);}
+    90% {transform: translateX(200px) translateY(0px);}
+    80% {transform: translateX(200px) translateY(200px);}
+    50% {transform: translateX(500px) translateY(200px);}
+    25% {transform: translateX(500px) translateY(500px);}
+    0% {transform: translateX(700px) translateY(500px);}
+}
+
+
+
+
+.dungim {
+    animation: none!important;
+}

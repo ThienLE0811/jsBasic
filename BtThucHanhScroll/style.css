@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+.banner {
+    height: 115px;
+    background: url('./Capture.PNG') no-repeat center;
+    background-size: cover;
+}
+
+.menu {
+    height: 50px;
+    line-height: 50px;
+    background-color: #ad1c22;
+    color: white;
+}
+
+.menu a {
+    color: white;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menuden {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+}
+
+
+.giua.vangdunglai {
+    position: fixed;
+    top: 50px;
+    
+}
+
+.s3 {
+    transition: 0.4s;
+
+}
+
+.s3.dilen {
+    animation: cdlen 1s ease forwards;
+}
+
+@keyframes cdlen {
+    from {transform: translateX(800px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}
+}

@@ -1,0 +1,133 @@
+/*
+- dau tien dat giao dien fullscreen
++ dat tat ca height 100%
++ width 100% tu tren xuong duoi
++ cho den the muon dat fullscreen
+- cac slide deu phai la absolute ( moi li la absolute, ul la relative)
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+#slidewrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+}
+
+#slidewrapper,.slides,.slides ul,.slides ul li,.slides ul li ._1slide{
+    height: 100%;
+    width: 100%;
+}
+
+.slides ul {
+    position: relative;
+}
+
+.slides ul li{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-size: cover;
+    opacity: 0;
+}
+
+.slides ul li.active {
+    opacity: 1;
+}
+
+.nuts{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+.nuts b{
+    font-size: 80px;
+    color: rgb(251 251 251);
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nuts b:hover{
+    color: rgb(175 175 175);
+}
+
+.bienMatKhiAnNext {
+    animation: ani1 1s forwards;
+
+}
+
+@keyframes ani1 {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0.8);
+        opacity: 1;}
+}
+
+.diVaoKhiAnNext{
+    animation: ani2 1s forwards;
+}
+
+@keyframes ani2 {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;}
+}
+
+.bienMatKhiAnPrev {
+    animation: ani2_nguoc 1s forwards;
+}
+
+@keyframes ani2_nguoc {
+    
+    from{
+        transform: translateX(0);
+        opacity: 1;}
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+.diVaoKhiAnPrev {
+    animation: ani1_nguoc 1s ease;
+}
+
+@keyframes ani1_nguoc {
+    
+    from{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

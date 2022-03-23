@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.menutren{
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.noidungchinh{
+    margin-top: 60px;
+    height: 100%;
+}
+
+.noidungchinh .trai{
+    float: left;
+    width: 31%;
+    height: 100%;
+}
+
+.noidungchinh .trai img{
+    position: fixed;
+    left: 0;
+    
+}
+
+.noidungchinh .giua{
+    float: left;
+    width: 38%;
+    
+}
+
+.noidungchinh .phai{
+    float: left;
+    width: 31%;
+}
+
+.noidungchinh .phai img{
+    position: fixed;
+    right: 0px;
+    
+}
+
+.motkhoi {
+    width: 100%;
+}
+
+.motkhoi .avatar{
+    height: 130px;
+    cursor: pointer;
+    
+}
+
+.motkhoi .cacanh {
+
+}
+
+.cacanh img.motanhtren{
+    width: 100%;
+    cursor: pointer;
+}
+
+.cacanh div._3anhduoi{
+    
+}
+
+._3anhduoi img {
+    width: 32.92%;
+    cursor: pointer;
+}
+
+.popup{
+
+}
+
+.popup .nenden {
+    transition: 0.4s;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ra {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+
+.dongLai i {
+    color: white;
+    cursor: pointer;
+    margin: 20px 0px 0 30px ;
+    font-size: 35px;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    
+}
+
+.dongLai i:hover{
+    opacity: 1;
+}
+
+
+.thongtinanh {
+    position: fixed;
+    width: 70%;
+    height: 80%;
+    background-color: black;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.noidunganh {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+}
+
+.khoiCacAnh {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.khoiCacAnh ul {
+    width: 100%;
+    height: 100%;
+}
+
+.khoiCacAnh ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.khoiCacAnh ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.nuttrai,
+.nutphai {
+    color: white;
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.nuttrai {
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 7;
+}
+
+.nutphai {
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 7;
+}
+
+.nuttrai:hover {
+    opacity: 1;
+}
+
+.nutphai:hover {
+    opacity: 1;
+}
